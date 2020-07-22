@@ -4,7 +4,7 @@ import Job from './Job';
 import {Container} from 'react-bootstrap';
 import {PacmanLoader} from 'react-spinners';
 import JobsPagination from './JobsPagination';
-import SearchForm from './SearchForm';
+// import SearchForm from './SearchForm';
 
 
 
@@ -14,14 +14,14 @@ function App() {
   const [page, setPage] = useState(1);
   const {jobs, loading, error, hasNextPage} = useFetchJobs(params, page);
 
-  function handleParamChange(e){
+  /* function handleParamChange(e){
     const param = e.target.name;
     const value = e.target.value;
     setPage(1);
     setParams(prevParams => {
       return {...prevParams, [param]: value}
     })
-  }
+  } */
 
   return (
     <Container className="pt-5 pb-5">
