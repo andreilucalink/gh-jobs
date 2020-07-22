@@ -35,7 +35,7 @@ function App() {
           return <Job key={job.id} job={job}/>
 
         })}
-        {!loading && <JobsPagination page={page} setPage={setPage} hasNextPage={hasNextPage}/>}
+        {!loading && <JobsPagination page={page} setPage={setPage} hasNextPage={hasNextPage} blabla={setParams}/>}
     </Container>
       )
 }
